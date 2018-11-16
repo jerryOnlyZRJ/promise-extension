@@ -1,0 +1,20 @@
+{
+  "name": "promise-extension",
+  "version": "1.0.0",
+  "description": "extend native promise api",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "keywords": [
+    "Promise"
+  ],
+  "author": "Ranjay Zheng",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^23.6.0"
+  }
+}

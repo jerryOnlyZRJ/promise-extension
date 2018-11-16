@@ -1,0 +1,8 @@
+# Mac DS_Store Files
+.DS_Store
+
+# node_modules
+node_modules/
+
+# test coverage
+docs/
