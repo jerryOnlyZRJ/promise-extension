@@ -6,6 +6,24 @@
   "directories": {
     "test": "tests"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "npm run test"
+    }
+  },
+  "lint-staged": {
+    "index.js": [
+      "prettier --write",
+      "eslint --fix",
+      "git add"
+    ],
+    "tests/*.js": [
+      "prettier --write",
+      "eslint --fix",
+      "git add"
+    ]
+  },
   "scripts": {
     "test": "jest --coverage"
   },
@@ -15,6 +33,12 @@
   "author": "Ranjay Zheng",
   "license": "MIT",
   "devDependencies": {
+    "eslint": "^5.9.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^8.0.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
     "jest": "^23.6.0"
   }
 }
