@@ -64,7 +64,3 @@ Promise.step([ajax1, ajax2, ajax3]).then(data => {
 ## License
 
 MIT
-
-## Keywords
-
-Promise
